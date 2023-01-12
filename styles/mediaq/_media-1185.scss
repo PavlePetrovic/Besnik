@@ -35,4 +35,37 @@
       }
    }
 
+   .review-section {
+      .review-logos {
+         max-width: 700px;
+         margin-left: auto;
+         margin-right: auto;
+         
+         img:nth-child(1) {
+            width: 145px;
+            height: auto;
+            flex-grow: initial;
+         }
+         img:nth-child(2) {
+            width: 116px;
+            height: auto;
+            flex-grow: initial;
+         }
+         img:nth-child(3) {
+            width: 121px;
+            flex-grow: initial;
+            height: auto;
+         }
+         img:nth-child(4) {
+            width: 157px;
+            flex-grow: initial;
+            height: auto;
+         }
+         img:nth-child(5) {
+            width: 154px;
+            flex-grow: initial;
+            height: auto;
+         }
+      }
+   }
 }
