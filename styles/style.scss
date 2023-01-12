@@ -66,6 +66,10 @@ header {
             border-radius: 8px;
          }
       }
+
+      .mobile-menu-items{
+         display: none;
+      }
    }
 
    .header-content {
@@ -107,10 +111,12 @@ header {
             background-color: $dark-btn;
             color: white;
             cursor: pointer;
+            margin-bottom: 150px;
          }
       }
 
       img {
+         align-self: flex-end;
          max-width: 584px;
          width: 100%;
          height: auto;
@@ -119,3 +125,6 @@ header {
       }
    }
 }
+
+@import './mediaq/media-1185';
+@import './mediaq/media-970'

@@ -1,0 +1,150 @@
+@import '../assets/variables';
+
+@media only screen and (max-width: 970px) {
+   
+   .stop-scroll{
+      overflow: hidden;
+   }
+
+   header {
+      .nav-bar {
+         .mobile-menu-div{
+            z-index: 3;
+            &:hover{
+                cursor: pointer;
+            }
+
+            .menu-icon{
+               width: 26px;
+               height: 2px;
+               background-color: $dark-btn;
+               margin: 5px 0px;
+               border-radius: 10px;
+               transition: 0.4s;
+            }
+
+            .bar-1.open{
+               width: 20px;
+               transform: rotate(405deg);
+               margin: 0px;
+               background-color: white;
+            }
+            .bar-2.open{
+               transform: translateX(-20px);
+               background: transparent;
+            }
+            .bar-3.open{
+               width: 20px;
+               transform: rotate(-405deg); 
+               margin: 0px;
+               background-color: white;
+            }
+         }
+
+         .mobile-menu-items{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0; /* Stay at the top */
+            right: 0;
+            z-index: 2;
+            background-color: $dark-btn;
+            overflow: hidden;
+            transition: 0.4s;
+
+            a{
+               font-family: 'Poppins-400';
+               font-size: 16px;
+               padding-block: 12px;
+               text-align: right;
+               text-decoration: none;
+               font-size: 20px;
+               color: white;
+               display: block;
+               transition: 0.3s;
+               -webkit-tap-highlight-color: transparent;
+            }
+
+            .register-div-mobile {
+               display: flex;
+               flex-direction: column-reverse;
+               align-items: center;
+               justify-content: center;
+               gap: 12px;
+               margin-top: 30px;
+
+               button {
+                  cursor: pointer;
+                  -webkit-tap-highlight-color: transparent;
+               }
+               
+               // Sign up
+               button:nth-child(1) {
+                  font-family: 'Poppins-400';
+                  font-size: 12px;
+                  background-color: transparent;
+                  border: none;
+                  border-bottom: 1px solid white;
+                  color: white;
+                  padding: 2px 0px;
+               }
+               
+               // Register
+               button:nth-child(2) {
+                  font-size: 14px;
+                  font-family: 'Poppins-500';
+                  background-color: $header-background;
+                  border: none;
+                  padding: 9px 70px;
+                  color: $dark-btn;
+                  border-radius: 8px;
+               }
+            }
+         }
+
+         .mobile-menu-items.open{
+            width: 100%;
+            background-color: $dark-btn;
+         }
+
+         img {
+            margin-right: auto;
+         }
+
+         .header-nav {
+            display: none;
+         }
+
+         .register-div {
+            display: none;
+         }
+      }
+
+      .header-content {
+         .header-content-text {
+            .welcome-text {
+               font-size: 17px;
+            }
+
+            h1 {
+               font-size: 52px;
+            }
+
+            .description-text {
+               font-size: 16px;
+            }
+         }
+
+         img {
+            max-width: 150px;
+            height: 180px;
+            left: 0;
+         }
+      }
+   }
+
+}
