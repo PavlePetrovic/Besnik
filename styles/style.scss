@@ -7,26 +7,115 @@
    box-sizing: border-box;
 }
 
-div {
+header {
    display: flex;
-   flex-direction: column;
    align-items: center;
-   justify-content: center;
-   height: 100vh;
+   flex-direction: column;
+   background-color: $header-background;
 
-   h1:nth-child(1) {
-      font-family: 'Poppins-700'
+   .header-wrapper-div {
+      max-width: 1440px;
+      padding-inline: 11%;
+      // min-height: 787px;
    }
-   h1:nth-child(2) {
-      font-family: 'Poppins-600'
+
+   .nav-bar {
+      display: flex;
+      align-items: center;
+      padding-top: 46px;
+
+      img {
+         margin-right: 64px;
+         max-width: 107px;
+      }
+
+      .header-nav {
+         display: flex;
+         gap: 30px;
+         margin-right: auto;
+
+         a {
+            font-family: 'Poppins-500';
+            text-decoration: none;
+            color: $header-nav;
+            font-size: 14px;
+         }
+      }
+
+      .register-div {
+         button {
+            font-family: 'Poppins-500';
+            font-size: 14px;
+            cursor: pointer;
+         }
+
+         // Sign up
+         button:nth-child(1) {
+            background-color: transparent;
+            border: none;
+            color: $dark-btn;
+            margin-right: 18px;
+         }
+
+         // Register
+         button:nth-child(2) {
+            background-color: $dark-btn;
+            border: none;
+            padding: 9px 20px;
+            color: white;
+            border-radius: 8px;
+         }
+      }
    }
-   h1:nth-child(3) {
-      font-family: 'Poppins-500'
-   }
-   h1:nth-child(4) {
-      font-family: 'Poppins-400'
-   }
-   h1:nth-child(5) {
-      font-family: 'Lato-700';
+
+   .header-content {
+      display: flex;
+
+      .header-content-text {
+         margin-top: 11.5%;
+
+         .welcome-text {
+            font-family: 'Poppins-500';
+            font-size: 18px;
+            color: $header-welcome-text;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+         }
+
+         h1 {
+            font-family: 'Poppins-700';
+            font-size: 64px;
+            line-height: 76px;
+         }
+
+         .description-text {
+            font-family: 'Poppins-400';
+            font-size: 18px;
+            line-height: 32px;
+            margin-top: 30px;
+            max-width: 600px;
+            color: $p-description-text;
+         }
+
+         button {
+            font-family: 'Poppins-500';
+            font-size: 13px;
+            margin-top: 40px;
+            padding: 15px 38px;
+            border-radius: 8px;
+            border: none;
+            background-color: $dark-btn;
+            color: white;
+            cursor: pointer;
+         }
+      }
+
+      img {
+         max-width: 584px;
+         width: 100%;
+         height: auto;
+         margin-top: 55px;
+         margin-right: -98px;
+      }
    }
 }
