@@ -16,7 +16,6 @@ header {
    .header-wrapper-div {
       max-width: 1440px;
       padding-inline: 11%;
-      // min-height: 787px;
    }
 
    .nav-bar {
@@ -122,6 +121,98 @@ header {
          height: auto;
          margin-top: 55px;
          margin-right: -98px;
+      }
+   }
+}
+
+.review-section {
+   display: flex;
+   flex-direction: column;
+   background-color: $light-background;
+
+   .review-wrapper-div {
+      max-width: 1440px;
+      padding-inline: 11%;
+      padding-block: 120px;
+   }
+
+   .reviews-info {
+      display: flex;
+      align-items: center;
+
+      .review-text {
+         display: flex;
+         flex-direction: column;
+         margin-right: auto;
+
+         img {
+            width: 107px;
+            margin-bottom: 23px;
+         }
+
+         p {
+            font-family: 'Poppins-500';
+            font-size: 16px;
+            line-height: 20px;
+            color: $review-text;
+         }
+      }
+
+      .review-rating {
+         display: flex;
+         flex-direction: column;
+
+         img {
+            width: 116px;
+            margin-bottom: 14px;
+         }
+
+         p {
+            font-family: 'Poppins-500';
+            font-size: 16px;
+            line-height: 20px;
+            color: $review-text;
+         }
+      }
+   }
+
+   .review-logos {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 80px;
+
+      img {
+         padding: 20px 40px;
+      }
+
+      img:nth-child(1) {
+         width: 145px;
+         flex-grow: 1;
+         height: auto;
+      }
+      img:nth-child(2) {
+         width: 116px;
+         flex-grow: 1;
+         height: auto;
+      }
+      img:nth-child(3) {
+         width: 121px;
+         height: auto;
+         box-shadow: 0 0 0.75rem gray;
+         flex-grow: 1;
+      }
+      img:nth-child(4) {
+         width: 157px;
+         flex-grow: 1;
+         height: auto;
+      }
+      img:nth-child(5) {
+         width: 154px;
+         flex-grow: 1;
+         height: auto;
       }
    }
 }
