@@ -1,3 +1,45 @@
+@font-face {
+  font-family: 'Poppins-400';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/poppins-font/poppins-v20-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("./assets/poppins-font/poppins-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("./assets/poppins-font/poppins-v20-latin-regular.woff2") format("woff2"), url("./assets/poppins-font/poppins-v20-latin-regular.woff") format("woff"), url("./assets/poppins-font/poppins-v20-latin-regular.ttf") format("truetype"), url("./assets/poppins-font/poppins-v20-latin-regular.svg#Poppins") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Poppins-500';
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/poppins-font/poppins-v20-latin-500.eot");
+  src: local(""), url("./assets/poppins-font/poppins-v20-latin-500.eot?#iefix") format("embedded-opentype"), url("./assets/poppins-font/poppins-v20-latin-500.woff2") format("woff2"), url("./assets/poppins-font/poppins-v20-latin-500.woff") format("woff"), url("./assets/poppins-font/poppins-v20-latin-500.ttf") format("truetype"), url("./assets/poppins-font/poppins-v20-latin-500.svg#Poppins") format("svg");
+}
+
+@font-face {
+  font-family: 'Poppins-600';
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/poppins-font/poppins-v20-latin-600.eot");
+  src: local(""), url("./assets/poppins-font/poppins-v20-latin-600.eot?#iefix") format("embedded-opentype"), url("./assets/poppins-font/poppins-v20-latin-600.woff2") format("woff2"), url("./assets/poppins-font/poppins-v20-latin-600.woff") format("woff"), url("./assets/poppins-font/poppins-v20-latin-600.ttf") format("truetype"), url("./assets/poppins-font/poppins-v20-latin-600.svg#Poppins") format("svg");
+}
+
+@font-face {
+  font-family: 'Poppins-700';
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/poppins-font/poppins-v20-latin-700.eot");
+  src: local(""), url("./assets/poppins-font/poppins-v20-latin-700.eot?#iefix") format("embedded-opentype"), url("./assets/poppins-font/poppins-v20-latin-700.woff2") format("woff2"), url("./assets/poppins-font/poppins-v20-latin-700.woff") format("woff"), url("./assets/poppins-font/poppins-v20-latin-700.ttf") format("truetype"), url("./assets/poppins-font/poppins-v20-latin-700.svg#Poppins") format("svg");
+}
+
+@font-face {
+  font-family: 'Lato-700';
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/lato-font/lato-v23-latin-700.eot");
+  src: local(""), url("./assets/lato-font/lato-v23-latin-700.eot?#iefix") format("embedded-opentype"), url("./assets/lato-font/lato-v23-latin-700.woff2") format("woff2"), url("./assets/lato-font/lato-v23-latin-700.woff") format("woff"), url("./assets/lato-font/lato-v23-latin-700.ttf") format("truetype"), url("./assets/lato-font/lato-v23-latin-700.svg#Lato") format("svg");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -9,6 +51,10 @@ div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -16,5 +62,25 @@ div {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
+}
+
+div h1:nth-child(1) {
+  font-family: 'Poppins-700';
+}
+
+div h1:nth-child(2) {
+  font-family: 'Poppins-600';
+}
+
+div h1:nth-child(3) {
+  font-family: 'Poppins-500';
+}
+
+div h1:nth-child(4) {
+  font-family: 'Poppins-400';
+}
+
+div h1:nth-child(5) {
+  font-family: 'Lato-700';
 }
 /*# sourceMappingURL=style.css.map */
