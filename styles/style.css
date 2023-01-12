@@ -47,40 +47,354 @@
           box-sizing: border-box;
 }
 
-div {
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #E6F0FF;
+}
+
+header .header-wrapper-div {
+  max-width: 1440px;
+  padding-inline: 11%;
+}
+
+header .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100vh;
+  padding-top: 46px;
 }
 
-div h1:nth-child(1) {
-  font-family: 'Poppins-700';
+header .nav-bar img {
+  margin-right: 64px;
+  max-width: 107px;
 }
 
-div h1:nth-child(2) {
-  font-family: 'Poppins-600';
+header .nav-bar .header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-right: auto;
 }
 
-div h1:nth-child(3) {
+header .nav-bar .header-nav a {
   font-family: 'Poppins-500';
+  text-decoration: none;
+  color: #4F5361;
+  font-size: 14px;
 }
 
-div h1:nth-child(4) {
+header .nav-bar .register-div button {
+  font-family: 'Poppins-500';
+  font-size: 14px;
+  cursor: pointer;
+}
+
+header .nav-bar .register-div button:nth-child(1) {
+  background-color: transparent;
+  border: none;
+  color: #0F1B4C;
+  margin-right: 18px;
+}
+
+header .nav-bar .register-div button:nth-child(2) {
+  background-color: #0F1B4C;
+  border: none;
+  padding: 9px 20px;
+  color: white;
+  border-radius: 8px;
+}
+
+header .nav-bar .mobile-menu-items {
+  display: none;
+}
+
+header .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header-content .header-content-text {
+  margin-top: 11.5%;
+}
+
+header .header-content .header-content-text .welcome-text {
+  font-family: 'Poppins-500';
+  font-size: 18px;
+  color: #687690;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+header .header-content .header-content-text h1 {
+  font-family: 'Poppins-700';
+  font-size: 64px;
+  line-height: 76px;
+}
+
+header .header-content .header-content-text .description-text {
   font-family: 'Poppins-400';
+  font-size: 18px;
+  line-height: 32px;
+  margin-top: 30px;
+  max-width: 600px;
+  color: #5A6473;
 }
 
-div h1:nth-child(5) {
-  font-family: 'Lato-700';
+header .header-content .header-content-text button {
+  font-family: 'Poppins-500';
+  font-size: 13px;
+  margin-top: 40px;
+  padding: 15px 38px;
+  border-radius: 8px;
+  border: none;
+  background-color: #0F1B4C;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 150px;
+}
+
+header .header-content img {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  max-width: 584px;
+  width: 100%;
+  height: auto;
+  margin-top: 55px;
+  margin-right: -98px;
+}
+
+@media only screen and (max-width: 1185px) {
+  header .header-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    position: relative;
+  }
+  header .header-content .header-content-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header-content .header-content-text h1 {
+    margin-top: 20px;
+    text-align: center;
+  }
+  header .header-content .header-content-text .description-text {
+    text-align: center;
+    margin-top: 20px;
+  }
+  header .header-content .header-content-text button {
+    margin-bottom: 170px;
+  }
+  header .header-content img {
+    position: absolute;
+    bottom: 0;
+    left: -75px;
+    max-width: 300px;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .stop-scroll {
+    overflow: hidden;
+  }
+  header .nav-bar .mobile-menu-div {
+    z-index: 3;
+    -webkit-tap-highlight-color: transparent;
+  }
+  header .nav-bar .mobile-menu-div:hover {
+    cursor: pointer;
+  }
+  header .nav-bar .mobile-menu-div .menu-icon {
+    width: 26px;
+    height: 2px;
+    background-color: #0F1B4C;
+    margin: 5px 0px;
+    border-radius: 10px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  header .nav-bar .mobile-menu-div .bar-1.open {
+    width: 20px;
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+    margin: 0px;
+  }
+  header .nav-bar .mobile-menu-div .bar-2.open {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+    background: transparent;
+  }
+  header .nav-bar .mobile-menu-div .bar-3.open {
+    width: 20px;
+    -webkit-transform: rotate(-405deg);
+            transform: rotate(-405deg);
+    margin: 0px;
+  }
+  header .nav-bar .mobile-menu-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    z-index: 2;
+    background-color: #E6F0FF;
+    overflow: hidden;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  header .nav-bar .mobile-menu-items a {
+    font-family: 'Poppins-400';
+    font-size: 16px;
+    padding-block: 12px;
+    text-align: right;
+    text-decoration: none;
+    font-size: 20px;
+    color: #0F1B4C;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-tap-highlight-color: transparent;
+  }
+  header .nav-bar .mobile-menu-items .register-div-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+  }
+  header .nav-bar .mobile-menu-items .register-div-mobile button {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  header .nav-bar .mobile-menu-items .register-div-mobile button:nth-child(1) {
+    font-family: 'Poppins-400';
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #0F1B4C;
+    color: #0F1B4C;
+    padding: 2px 0px;
+  }
+  header .nav-bar .mobile-menu-items .register-div-mobile button:nth-child(2) {
+    font-size: 16px;
+    font-family: 'Poppins-500';
+    background-color: #0F1B4C;
+    border: none;
+    padding: 12px 80px;
+    color: #E6F0FF;
+    border-radius: 8px;
+  }
+  header .nav-bar .mobile-menu-items.open {
+    width: 100%;
+    background-color: #E6F0FF;
+  }
+  header .nav-bar img {
+    margin-right: auto;
+  }
+  header .nav-bar .header-nav {
+    display: none;
+  }
+  header .nav-bar .register-div {
+    display: none;
+  }
+  header .header-content .header-content-text .welcome-text {
+    font-size: 17px;
+  }
+  header .header-content .header-content-text h1 {
+    font-size: 52px;
+  }
+  header .header-content .header-content-text .description-text {
+    font-size: 16px;
+  }
+  header .header-content img {
+    max-width: 150px;
+    height: 180px;
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 585px) {
+  header .nav-bar img {
+    margin-right: auto;
+  }
+  header .nav-bar .header-nav {
+    display: none;
+  }
+  header .nav-bar .register-div {
+    display: none;
+  }
+  header .header-content .header-content-text .welcome-text {
+    font-size: 16px;
+    margin-top: 40px;
+  }
+  header .header-content .header-content-text h1 {
+    font-size: 33px;
+    line-height: 45px;
+    margin-top: 25px;
+  }
+  header .header-content .header-content-text .description-text {
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: 30px;
+  }
+  header .header-content .header-content-text button {
+    font-size: 12px;
+    padding: 12px 32px;
+    margin-top: 35px;
+    margin-bottom: 110px;
+  }
+  header .header-content img {
+    max-width: 100px;
+    height: 120px;
+    left: -20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
