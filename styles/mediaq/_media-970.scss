@@ -10,6 +10,7 @@
       .nav-bar {
          .mobile-menu-div{
             z-index: 3;
+            -webkit-tap-highlight-color: transparent;
             &:hover{
                 cursor: pointer;
             }
@@ -27,7 +28,6 @@
                width: 20px;
                transform: rotate(405deg);
                margin: 0px;
-               background-color: white;
             }
             .bar-2.open{
                transform: translateX(-20px);
@@ -37,7 +37,6 @@
                width: 20px;
                transform: rotate(-405deg); 
                margin: 0px;
-               background-color: white;
             }
          }
 
@@ -52,7 +51,7 @@
             top: 0; /* Stay at the top */
             right: 0;
             z-index: 2;
-            background-color: $dark-btn;
+            background-color: $header-background;
             overflow: hidden;
             transition: 0.4s;
 
@@ -63,7 +62,7 @@
                text-align: right;
                text-decoration: none;
                font-size: 20px;
-               color: white;
+               color: $dark-btn;
                display: block;
                transition: 0.3s;
                -webkit-tap-highlight-color: transparent;
@@ -85,22 +84,22 @@
                // Sign up
                button:nth-child(1) {
                   font-family: 'Poppins-400';
-                  font-size: 12px;
+                  font-size: 13px;
                   background-color: transparent;
                   border: none;
-                  border-bottom: 1px solid white;
-                  color: white;
+                  border-bottom: 1px solid $dark-btn;
+                  color: $dark-btn;
                   padding: 2px 0px;
                }
                
                // Register
                button:nth-child(2) {
-                  font-size: 14px;
+                  font-size: 16px;
                   font-family: 'Poppins-500';
-                  background-color: $header-background;
+                  background-color: $dark-btn;
                   border: none;
-                  padding: 9px 70px;
-                  color: $dark-btn;
+                  padding: 12px 80px;
+                  color: $header-background;
                   border-radius: 8px;
                }
             }
@@ -108,7 +107,7 @@
 
          .mobile-menu-items.open{
             width: 100%;
-            background-color: $dark-btn;
+            background-color: $header-background;
          }
 
          img {
