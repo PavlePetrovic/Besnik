@@ -146,4 +146,24 @@
       }
    }
 
+   .review-section {
+      align-items: center;
+
+      .reviews-info {
+         flex-direction: column;
+
+         .review-text {
+            align-items: center;
+            margin-right: 0;
+            text-align: center;
+         }
+
+         .review-rating {
+            margin-top: 40px;
+            align-items: center;
+            text-align: center;
+         }
+      }
+   }
+
 }

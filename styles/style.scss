@@ -178,31 +178,27 @@ header {
 
    .review-logos {
       display: flex;
-      gap: 30px;
+      gap: 55px;
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
       margin-top: 80px;
 
-      img {
-         padding: 20px 40px;
-      }
-
       img:nth-child(1) {
          width: 145px;
-         flex-grow: 1;
          height: auto;
+         flex-grow: 1;
       }
       img:nth-child(2) {
          width: 116px;
-         flex-grow: 1;
          height: auto;
+         flex-grow: 1;
+
       }
       img:nth-child(3) {
          width: 121px;
-         height: auto;
-         box-shadow: 0 0 0.75rem gray;
          flex-grow: 1;
+         height: auto;
       }
       img:nth-child(4) {
          width: 157px;
