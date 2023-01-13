@@ -7,6 +7,12 @@
    box-sizing: border-box;
 }
 
+// General styles
+a, button {
+   -webkit-tap-highlight-color: transparent;
+}
+
+// Header section
 header {
    display: flex;
    align-items: center;
@@ -61,7 +67,7 @@ header {
             background-color: $dark-btn;
             border: none;
             padding: 9px 20px;
-            color: white;
+            color: $light-background;
             border-radius: 8px;
          }
       }
@@ -108,7 +114,7 @@ header {
             border-radius: 8px;
             border: none;
             background-color: $dark-btn;
-            color: white;
+            color: $light-background;
             cursor: pointer;
             margin-bottom: 150px;
          }
@@ -125,6 +131,7 @@ header {
    }
 }
 
+// Review, Ratings section
 .review-section {
    display: flex;
    flex-direction: column;
@@ -215,6 +222,7 @@ header {
    }
 }
 
+// How its works section
 .how-section {
    display: flex;
    flex-direction: column;
@@ -284,7 +292,7 @@ header {
             font-family: 'Poppins-600';
             font-size: 14px;
             text-decoration: none;
-            color: #0689FF;
+            color: $link-blue;
          }
       }
    }
@@ -297,16 +305,17 @@ header {
       border-radius: 8px;
       background-color: $dark-btn;
       text-align: center;
-      color: white;
+      color: $light-background;
       margin-top: 48px;
       margin-bottom: 110px
    }
 }
 
+// Featured properties section
 .properties-section {
    display: flex;
    flex-direction: column;
-   background-color: #F5FAFE;
+   background-color: $properties-background;
    align-items: center;
 
    .properties-wrapper-div {
@@ -341,7 +350,7 @@ header {
          font-family: 'Poppins-600';
          font-size: 18px;
          text-decoration: none;
-         color: #0689FF;
+         color: $link-blue;
       }
    }
 
@@ -381,7 +390,7 @@ header {
             font-family: 'Poppins-500';
             font-size: 14px;
             margin-top: 8px;
-            color: #A3A6AB;
+            color: $properties-card-p;
          }
 
          .properties-card-icons {
@@ -404,7 +413,7 @@ header {
                p {
                   font-family: 'Poppins-500';
                   font-size: 14px;
-                  color: #4D4D52;
+                  color: $properties-card-icons-p;
                   white-space: nowrap;
                   margin-top: 0;
                }
@@ -414,6 +423,7 @@ header {
    }
 }
 
+//  Numbers, Counter section
 .numbers-section {
    display: flex;
    flex-direction: column;
@@ -470,13 +480,13 @@ header {
             p {
                font-family: 'Poppins-400';
                font-size: 12px;
-               color: #A7A7A7;
+               color: $image-badge-p;
             }
 
             .badge-line {
                height: 1px;
                width: 100%;
-               background-color: #E9E9E9;
+               background-color: $image-badge-line-background;
                margin-top: 25px;
                border-radius: 10px;
             }
@@ -533,19 +543,20 @@ header {
          h1 {
             font-family: 'Poppins-600';
             font-size: 64px;
-            color: black;
+            color: $counter-h;
             margin-bottom: 10px
          }
 
          p {
             font-family: 'Poppins-500';
             font-size: 18px;
-            color: #7B8087;
+            color: $counter-p;
          }
       }
    }
 }
 
+// Ad box section
 .box-section {
    display: flex;
    flex-direction: column;
@@ -561,7 +572,7 @@ header {
 
    .box {
       position: relative;
-      background-color: #063183;
+      background-color: $box-background;
       margin-top: 50px;
       border-radius: 20px;
       padding: 110px 80px;
@@ -569,7 +580,7 @@ header {
       h2 {
          font-family: 'Poppins-600';
          font-size: 35px;
-         color: white;
+         color: $light-background;
          margin-bottom: 15px;
       }
 
@@ -577,7 +588,7 @@ header {
          font-family: 'Poppins-400';
          font-style: normal;
          font-size: 16px;
-         color: white;
+         color: $light-background;
          margin-bottom: 28px;
       }
 
@@ -601,6 +612,7 @@ header {
    }
 }
 
+// Footer section
 footer {
    display: flex;
    flex-direction: column;
@@ -624,14 +636,14 @@ footer {
          h3 {
             font-family: 'Lato-700';
             font-size: 20px;
-            color: #1C1C1D;
+            color: $footer-nav-title;
             margin-bottom: 42px;
          }
 
          a {
             font-family: 'Poppins-400';
             font-size: 16px;
-            color: #7A7A7E;
+            color: $footer-nav-link;
             margin-bottom: 18px;
             text-decoration: none;
          }
@@ -640,7 +652,7 @@ footer {
             max-width: 227px;
             font-family: 'Poppins-400';
             font-size: 16px;
-            color: #7A7A7E;
+            color: $footer-nav-desc;
             line-height: 28px;
             margin-bottom: 40px;
          }
@@ -666,11 +678,12 @@ footer {
       p {
          font-family: 'Poppins-400';
          font-size: 14px;
-         color: #C2C2C2;
+         color: $footer-line-p;
       }
    }
 }
 
+// Media queries
 @import './mediaq/media-1185';
 @import './mediaq/media-970';
 @import './mediaq/media-585';

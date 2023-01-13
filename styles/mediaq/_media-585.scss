@@ -1,137 +1,142 @@
 @media only screen and (max-width: 585px) {
 
-header {
-   .nav-bar {
-      img {
-         margin-right: auto;
+   // Header section
+   header {
+      .nav-bar {
+         img {
+            margin-right: auto;
+         }
+
+         .header-nav {
+            display: none;
+         }
+
+         .register-div {
+            display: none;
+         }
       }
 
-      .header-nav {
-         display: none;
-      }
+      .header-content {
+         .header-content-text {
+            .welcome-text {
+               font-size: 16px;
+               margin-top: 40px;
+            }
 
-      .register-div {
-         display: none;
+            h1 {
+               font-size: 33px;
+               line-height: 45px;
+               margin-top: 25px;
+            }
+
+            .description-text {
+               font-size: 14px;
+               line-height: 26px;
+               margin-top: 30px;
+            }
+
+            button {
+               font-size: 12px;
+               padding: 12px 32px;
+               margin-top: 35px;
+               margin-bottom: 110px;
+            }
+         }
+
+         img {
+            max-width: 100px;
+            height: 120px;
+            left: -20px;
+         }
       }
    }
 
-   .header-content {
-      .header-content-text {
-         .welcome-text {
-            font-size: 16px;
-            margin-top: 40px;
-         }
+   // Featured properties section
+   .properties-section {
+      .properties-cards-div {
+         .properties-card {
+            .properties-card-icons {
+               .properties-icon {
+                  gap: 5px;
 
-         h1 {
-            font-size: 33px;
-            line-height: 45px;
-            margin-top: 25px;
-         }
-
-         .description-text {
-            font-size: 14px;
-            line-height: 26px;
-            margin-top: 30px;
-         }
-
-         button {
-            font-size: 12px;
-            padding: 12px 32px;
-            margin-top: 35px;
-            margin-bottom: 110px;
-         }
-      }
-
-      img {
-         max-width: 100px;
-         height: 120px;
-         left: -20px;
-      }
-   }
-}
-
-.properties-section {
-   .properties-cards-div {
-      .properties-card {
-         .properties-card-icons {
-            .properties-icon {
-               gap: 5px;
-
-               img {
-                  width: 18px;
+                  img {
+                     width: 18px;
+                  }
+                  p {
+                     font-size: 13px;
+                  }
                }
+            }
+         }
+      }
+   }
+
+   //  Numbers, Counter section
+   .numbers-section {
+      .numbers-content {
+         .numbers-image {
+            .image-badge {
+               top: -70px;
+               left: 0; 
+               right: 0; 
+               margin-left: auto; 
+               margin-right: auto; 
+               border-radius: 12px;
+               margin-top: 70px;
+               width: 240px;
+
+               .badge-title {
+                  margin-top: 10px;
+                  margin-bottom: 4px;
+
+                  h3 {
+                     font-size: 22px;
+                  }
+               }
+
                p {
-                  font-size: 13px;
+                  font-size: 10px;
+               }
+
+               .badge-line {
+                  margin-top: 15px;
+               }
+
+               .badge-users {
+                  margin-block: 0px;
+                  margin-top: 7px;
                }
             }
          }
       }
-   }
-}
 
-.numbers-section {
-   .numbers-content {
-      .numbers-image {
-         .image-badge {
-            top: -70px;
-            left: 0; 
-            right: 0; 
-            margin-left: auto; 
-            margin-right: auto; 
-            border-radius: 12px;
-            margin-top: 70px;
-            width: 240px;
+      .numbers-counter {
+         flex-direction: column;
+         align-items: center;
+         gap: 40px;
+         margin-bottom: 100px;
 
-            .badge-title {
-               margin-top: 10px;
-               margin-bottom: 4px;
-
-               h3 {
-                  font-size: 22px;
-               }
-            }
+         .counter-box {
+            margin-top: 0px;
 
             p {
-               font-size: 10px;
-            }
-
-            .badge-line {
-               margin-top: 15px;
-            }
-
-            .badge-users {
-               margin-block: 0px;
-               margin-top: 7px;
+               text-align: center;
             }
          }
       }
    }
 
-   .numbers-counter {
-      flex-direction: column;
-      align-items: center;
-      gap: 40px;
-      margin-bottom: 100px;
-
-      .counter-box {
-         margin-top: 0px;
-
-         p {
-            text-align: center;
+   // Ad box section
+   .box-section {
+      .box {
+         img {
+            width: 180px;
+            margin-top: 50px;
          }
       }
    }
-}
 
-.box-section {
-   .box {
-      img {
-         width: 180px;
-         margin-top: 50px;
-      }
-   }
-}
-
+   // Footer section
    footer {
       .footer-nav {
          flex-wrap: wrap;
@@ -153,9 +158,7 @@ header {
             }
          }
       }
-   }
 
-   footer {
       .footer-line {
          display: flex;
          align-items: center;
@@ -173,5 +176,5 @@ header {
          }
       }
    }
-
+   
 }

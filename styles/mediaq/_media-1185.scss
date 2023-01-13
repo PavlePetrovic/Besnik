@@ -1,5 +1,6 @@
 @media only screen and (max-width: 1185px) {
 
+   // Header section
    header {
       .header-content {
          flex-direction: row-reverse;
@@ -35,6 +36,7 @@
       }
    }
 
+   // Review, Ratings section
    .review-section {
       .review-logos {
          max-width: 700px;
@@ -69,6 +71,7 @@
       }
    }
 
+   // Featured properties section
    .properties-section {
       .properties-cards-div {
          .properties-card {
@@ -89,6 +92,7 @@
       }
    }
 
+   //  Numbers, Counter section
    .numbers-section {
       .numbers-content {
          .numbers-image {
@@ -123,6 +127,7 @@
       }
    }
 
+   // Ad box section
    .box-section {
       .box {
          padding: 110px 70px;
@@ -144,4 +149,5 @@
          }
       }
    }
+   
 }
