@@ -129,13 +129,11 @@ header {
    display: flex;
    flex-direction: column;
    background-color: $light-background;
-   align-items: center;
 
    .review-wrapper-div {
       max-width: 1440px;
       padding-inline: 11%;
       padding-block: 120px;
-      width: 100%;
    }
 
    .reviews-info {
@@ -307,12 +305,10 @@ header {
    display: flex;
    flex-direction: column;
    background-color: #F5FAFE;
-   align-items: center;
 
    .properties-wrapper-div {
       max-width: 1440px;
       padding-inline: 11%;
-      width: 100%;
    }
 
    .properties-info {
@@ -418,12 +414,10 @@ header {
    display: flex;
    flex-direction: column;
    background-color: $light-background;
-   align-items: center;
 
    .numbers-wrapper-div {
       max-width: 1440px;
       padding-inline: 11%;
-      width: 100%;
    }
 
    .numbers-content {
@@ -542,61 +536,6 @@ header {
             font-size: 18px;
             color: #7B8087;
          }
-      }
-   }
-}
-
-.box-section {
-   display: flex;
-   flex-direction: column;
-   background-color: $light-background;
-   padding-bottom: 100px;
-   align-items: center;
-
-   .box-wrapper-div {
-      max-width: 1440px;
-      width: 100%;
-      padding-inline: 11%;
-   }
-
-   .box {
-      position: relative;
-      background-color: #063183;
-      margin-top: 50px;
-      border-radius: 20px;
-      padding: 110px 80px;
-
-      h2 {
-         font-family: 'Poppins-600';
-         font-size: 35px;
-         color: white;
-         margin-bottom: 15px;
-      }
-
-      p { 
-         font-family: 'Poppins-400';
-         font-style: normal;
-         font-size: 16px;
-         color: white;
-         margin-bottom: 28px;
-      }
-
-      button {
-         font-family: 'Poppins-500';
-         font-size: 13px;
-         padding: 15px 22px;
-         border-radius: 12px;
-         color: #002366;
-         background-color: $light-background;
-         border: none;
-         cursor: pointer;
-      }
-
-      img {
-         max-width: 230px;
-         position: absolute;
-         right: 120px;
-         bottom: 0;
       }
    }
 }
