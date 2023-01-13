@@ -56,6 +56,34 @@ button:hover {
   transition: 0.4s;
 }
 
+body {
+  margin: 0 auto;
+  -webkit-animation: fadeInAnimation ease 1.5s;
+          animation: fadeInAnimation ease 1.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
