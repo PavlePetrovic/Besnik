@@ -47,6 +47,10 @@
           box-sizing: border-box;
 }
 
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
