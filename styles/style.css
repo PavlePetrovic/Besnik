@@ -472,7 +472,7 @@ header .header-content img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 20px;
+  gap: 15px;
 }
 
 .properties-section .properties-cards-div .properties-card {
@@ -627,6 +627,16 @@ header .header-content img {
         -ms-flex-positive: initial;
             flex-grow: initial;
     height: auto;
+  }
+  .properties-section .properties-cards-div .properties-card .properties-card-icons .properties-icon {
+    gap: 0px;
+  }
+  .properties-section .properties-cards-div .properties-card .properties-card-icons .properties-icon img {
+    width: 18px;
+  }
+  .properties-section .properties-cards-div .properties-card .properties-card-icons .properties-icon p {
+    font-size: 13px;
+    padding-inline: 4px;
   }
 }
 
