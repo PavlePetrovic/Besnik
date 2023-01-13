@@ -410,6 +410,136 @@ header {
    }
 }
 
+.numbers-section {
+   display: flex;
+   flex-direction: column;
+   background-color: $light-background;
+
+   .numbers-wrapper-div {
+      max-width: 1440px;
+      padding-inline: 11%;
+   }
+
+   .numbers-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+
+      .numbers-image {
+         position: relative;
+         display: flex;
+         align-items: center;
+         max-width: 400px;
+         height: 500px;
+         margin-right: 12%;
+
+         .image-badge {
+            position: absolute;
+            width: 240px;
+            top: 0;
+            left: -120px;
+            background-color: $light-background;
+            padding-inline: 20px;
+            border-bottom-right-radius: 12px;
+
+            .badge-title {
+               display: flex;
+               align-items: center;
+               margin-top: 25px;
+               margin-bottom: 8px;
+
+               h3 {
+                  font-family: 'Poppins-700';
+                  font-size: 26px;
+                  margin-right: auto;
+               }
+
+               img {
+                  width: 25px;
+                  border-radius: 0;
+               }
+            }
+
+            p {
+               font-family: 'Poppins-400';
+               font-size: 12px;
+               color: #A7A7A7;
+            }
+
+            .badge-line {
+               height: 1px;
+               width: 100%;
+               background-color: #E9E9E9;
+               margin-top: 25px;
+               border-radius: 10px;
+            }
+
+            .badge-users {
+               margin-block: 20px;
+            }
+         }
+
+         img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+         }
+      }
+
+      .numbers-text {
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         max-width: 320px;
+
+         .line {
+            width: 41px;
+            height: 4px;
+            background-color: $subtitle-text;
+            margin-bottom: 10px;
+            border-radius: 12px;
+         }
+
+         h2 {
+            font-family: 'Poppins-600';
+            font-size: 35px;
+            color: $subtitle-text;
+            margin-bottom: 20px
+         }
+
+         p {
+            font-family: 'Poppins-400';
+            font-size: 16px;
+            color: $p-description-text
+         }
+      }
+   }
+
+   .numbers-counter {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 90px;
+
+      .counter-box {
+         margin-top: 90px;
+
+         h1 {
+            font-family: 'Poppins-600';
+            font-size: 64px;
+            color: black;
+            margin-bottom: 10px
+         }
+
+         p {
+            font-family: 'Poppins-500';
+            font-size: 18px;
+            color: #7B8087;
+         }
+      }
+   }
+}
+
 @import './mediaq/media-1185';
 @import './mediaq/media-970';
 @import './mediaq/media-585';
