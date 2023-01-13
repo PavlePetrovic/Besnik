@@ -550,6 +550,159 @@ header .header-content img {
   margin-top: 0;
 }
 
+.numbers-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+}
+
+.numbers-section .numbers-wrapper-div {
+  max-width: 1440px;
+  padding-inline: 11%;
+}
+
+.numbers-section .numbers-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+
+.numbers-section .numbers-content .numbers-image {
+  position: relative;
+  max-width: 400px;
+  height: 500px;
+  margin-right: 12%;
+}
+
+.numbers-section .numbers-content .numbers-image .image-badge {
+  position: absolute;
+  width: 240px;
+  top: 0;
+  left: -120px;
+  background-color: white;
+  padding-inline: 20px;
+  border-bottom-right-radius: 12px;
+}
+
+.numbers-section .numbers-content .numbers-image .image-badge .badge-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+.numbers-section .numbers-content .numbers-image .image-badge .badge-title h3 {
+  font-family: 'Poppins-700';
+  font-size: 26px;
+  margin-right: auto;
+}
+
+.numbers-section .numbers-content .numbers-image .image-badge .badge-title img {
+  width: 25px;
+  border-radius: 0;
+}
+
+.numbers-section .numbers-content .numbers-image .image-badge p {
+  font-family: 'Poppins-400';
+  font-size: 12px;
+  color: #A7A7A7;
+}
+
+.numbers-section .numbers-content .numbers-image .image-badge .badge-line {
+  height: 1px;
+  width: 100%;
+  background-color: #E9E9E9;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+
+.numbers-section .numbers-content .numbers-image .image-badge .badge-users {
+  margin-block: 20px;
+}
+
+.numbers-section .numbers-content .numbers-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.numbers-section .numbers-content .numbers-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 320px;
+}
+
+.numbers-section .numbers-content .numbers-text .line {
+  width: 41px;
+  height: 4px;
+  background-color: #000339;
+  margin-bottom: 10px;
+  border-radius: 12px;
+}
+
+.numbers-section .numbers-content .numbers-text h2 {
+  font-family: 'Poppins-600';
+  font-size: 35px;
+  color: #000339;
+  margin-bottom: 20px;
+}
+
+.numbers-section .numbers-content .numbers-text p {
+  font-family: 'Poppins-400';
+  font-size: 16px;
+  color: #5A6473;
+}
+
+.numbers-section .numbers-counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 90px;
+}
+
+.numbers-section .numbers-counter .counter-box {
+  margin-top: 90px;
+}
+
+.numbers-section .numbers-counter .counter-box h1 {
+  font-family: 'Poppins-600';
+  font-size: 64px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.numbers-section .numbers-counter .counter-box p {
+  font-family: 'Poppins-500';
+  font-size: 18px;
+  color: #7B8087;
+}
+
 @media only screen and (max-width: 1185px) {
   header .header-content {
     -webkit-box-orient: horizontal;
