@@ -166,4 +166,16 @@
       }
    }
 
+   .how-section {
+      .how-cards-div {
+         flex-direction: column;
+         gap: 70px;
+      }
+
+      button {
+         margin-top: 55px;
+      }
+   }
+
+
 }
