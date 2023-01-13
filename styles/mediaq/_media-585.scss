@@ -155,4 +155,23 @@ header {
       }
    }
 
+   footer {
+      .footer-line {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding-block: 80px 60px;
+         flex-direction: column;
+         gap: 30px;
+   
+         img {
+            margin-right: 0px;
+         }
+   
+         p {
+            text-align: center;
+         }
+      }
+   }
+
 }

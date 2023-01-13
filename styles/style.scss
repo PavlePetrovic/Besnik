@@ -605,7 +605,6 @@ footer {
    display: flex;
    flex-direction: column;
    background-color: $light-background;
-   padding-bottom: 50px;
    align-items: center;
 
    .footer-wrapper-div {
@@ -651,6 +650,23 @@ footer {
             gap: 16px;
             cursor: pointer;
          }
+      }
+   }
+
+   .footer-line {
+      display: flex;
+      align-items: flex-end;
+      padding-block: 80px 60px;
+
+      img {
+         width: 107px;
+         margin-right: auto;
+      }
+
+      p {
+         font-family: 'Poppins-400';
+         font-size: 14px;
+         color: #C2C2C2;
       }
    }
 }
