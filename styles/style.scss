@@ -601,6 +601,76 @@ header {
    }
 }
 
+footer {
+   display: flex;
+   flex-direction: column;
+   background-color: $light-background;
+   align-items: center;
+
+   .footer-wrapper-div {
+      max-width: 1440px;
+      width: 100%;
+      padding-inline: 11%;
+   }
+
+   .footer-nav {
+      display: flex;
+      justify-content: space-between;
+
+      .nav-box {
+         display: flex;
+         flex-direction: column;
+
+         h3 {
+            font-family: 'Lato-700';
+            font-size: 20px;
+            color: #1C1C1D;
+            margin-bottom: 42px;
+         }
+
+         a {
+            font-family: 'Poppins-400';
+            font-size: 16px;
+            color: #7A7A7E;
+            margin-bottom: 18px;
+            text-decoration: none;
+         }
+
+         p {
+            max-width: 227px;
+            font-family: 'Poppins-400';
+            font-size: 16px;
+            color: #7A7A7E;
+            line-height: 28px;
+            margin-bottom: 40px;
+         }
+
+         .nav-box-icons {
+            display: flex;
+            gap: 16px;
+            cursor: pointer;
+         }
+      }
+   }
+
+   .footer-line {
+      display: flex;
+      align-items: flex-end;
+      padding-block: 80px 60px;
+
+      img {
+         width: 107px;
+         margin-right: auto;
+      }
+
+      p {
+         font-family: 'Poppins-400';
+         font-size: 14px;
+         color: #C2C2C2;
+      }
+   }
+}
+
 @import './mediaq/media-1185';
 @import './mediaq/media-970';
 @import './mediaq/media-585';
