@@ -304,6 +304,116 @@ header .header-content img {
   height: auto;
 }
 
+.how-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+}
+
+.how-section .how-wrapper-div {
+  max-width: 1440px;
+  padding-inline: 11%;
+  text-align: center;
+}
+
+.how-section .line {
+  width: 41px;
+  height: 4px;
+  background-color: #000339;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.how-section h2 {
+  font-family: 'Poppins-600';
+  font-size: 35px;
+  text-align: center;
+  color: #000339;
+  margin-bottom: 20px;
+}
+
+.how-section p {
+  font-family: 'Poppins-400';
+  font-size: 16px;
+  text-align: center;
+  color: #5A6473;
+  margin-bottom: 70px;
+  margin-inline: auto;
+  max-width: 450px;
+}
+
+.how-section .how-cards-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 140px;
+}
+
+.how-section .how-cards-div .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+.how-section .how-cards-div .card img {
+  width: 48px;
+  margin-bottom: 20px;
+}
+
+.how-section .how-cards-div .card p {
+  font-family: 'Poppins-500';
+  font-size: 20px;
+  margin-bottom: 0px;
+  white-space: nowrap;
+}
+
+.how-section .how-cards-div .card a {
+  font-family: 'Poppins-600';
+  font-size: 14px;
+  text-decoration: none;
+  color: #0689FF;
+}
+
+.how-section button {
+  font-family: 'Poppins-500';
+  font-size: 13px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0F1B4C;
+  text-align: center;
+  color: white;
+  margin-top: 48px;
+  margin-bottom: 100px;
+}
+
 @media only screen and (max-width: 1185px) {
   header .header-content {
     -webkit-box-orient: horizontal;
@@ -550,6 +660,16 @@ header .header-content img {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+  }
+  .how-section .how-cards-div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 70px;
+  }
+  .how-section button {
+    margin-top: 55px;
   }
 }
 
