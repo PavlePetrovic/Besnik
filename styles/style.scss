@@ -129,11 +129,13 @@ header {
    display: flex;
    flex-direction: column;
    background-color: $light-background;
+   align-items: center;
 
    .review-wrapper-div {
       max-width: 1440px;
       padding-inline: 11%;
       padding-block: 120px;
+      width: 100%;
    }
 
    .reviews-info {
@@ -305,10 +307,12 @@ header {
    display: flex;
    flex-direction: column;
    background-color: #F5FAFE;
+   align-items: center;
 
    .properties-wrapper-div {
       max-width: 1440px;
       padding-inline: 11%;
+      width: 100%;
    }
 
    .properties-info {
@@ -414,10 +418,12 @@ header {
    display: flex;
    flex-direction: column;
    background-color: $light-background;
+   align-items: center;
 
    .numbers-wrapper-div {
       max-width: 1440px;
       padding-inline: 11%;
+      width: 100%;
    }
 
    .numbers-content {
@@ -541,20 +547,22 @@ header {
 }
 
 .box-section {
-   display: flex !important;
+   display: flex;
    flex-direction: column;
    background-color: $light-background;
    padding-bottom: 100px;
+   align-items: center;
 
    .box-wrapper-div {
       max-width: 1440px;
+      width: 100%;
       padding-inline: 11%;
    }
 
    .box {
       position: relative;
       background-color: #063183;
-      margin-top: 20px;
+      margin-top: 50px;
       border-radius: 20px;
       padding: 110px 80px;
 
@@ -587,7 +595,7 @@ header {
       img {
          max-width: 230px;
          position: absolute;
-         right: 215px;
+         right: 120px;
          bottom: 0;
       }
    }
