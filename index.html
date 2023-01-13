@@ -214,17 +214,25 @@
 
          <div class="numbers-counter">
             <div class="counter-box">
-               <h1>2,500</h1>
+               <div class="counter-box-num">
+                  <h1 id="number-1">2,500</h1>
+               </div>
                <p>Homes For Sale</p>
             </div>
 
             <div class="counter-box">
-               <h1>5,000+</h1>
+               <div class="counter-box-num">   
+                  <h1 id="number-2">5,000</h1>
+                  <span>+</span>
+               </div>
                <p>Homes Recently Sold</p>
             </div>
 
             <div class="counter-box">
-               <h1>170+</h1>
+               <div class="counter-box-num">
+                  <h1 id="number-3">170</h1>
+                  <span>+</span>
+               </div>
                <p>Price Reduced</p>
             </div>
          </div>
@@ -288,6 +296,7 @@
       </div>
    </footer>
 
-   <script src="./script.js"></script>
+   <script src="./script.js" type="module"></script>
+   <script src="./counterJs/dist/countUp.min.js" type="module"></script>
 </body>
 </html>
