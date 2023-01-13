@@ -428,6 +428,8 @@ header {
 
       .numbers-image {
          position: relative;
+         display: flex;
+         align-items: center;
          max-width: 400px;
          height: 500px;
          margin-right: 12%;
@@ -481,7 +483,7 @@ header {
          img {
             width: 100%;
             height: auto;
-            border-radius: 12px
+            border-radius: 12px;
          }
       }
 
