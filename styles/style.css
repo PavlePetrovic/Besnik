@@ -839,7 +839,7 @@ footer .footer-nav .nav-box a {
 }
 
 footer .footer-nav .nav-box p {
-  max-width: 240px;
+  max-width: 227px;
   font-family: 'Poppins-400';
   font-size: 16px;
   color: #7A7A7E;
@@ -1261,6 +1261,22 @@ footer .footer-nav .nav-box .nav-box-icons {
   .box-section .box img {
     position: initial;
     margin-top: 60px;
+  }
+  footer .footer-nav {
+    gap: 40px;
+  }
+  footer .footer-nav .nav-box h3 {
+    font-size: 17px;
+  }
+  footer .footer-nav .nav-box a {
+    font-size: 13px;
+  }
+  footer .footer-nav .nav-box p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  footer .footer-nav .nav-box .nav-box-icons img {
+    width: 25px;
   }
 }
 

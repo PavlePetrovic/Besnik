@@ -292,4 +292,31 @@
       }
    }
 
+   footer {
+      .footer-nav {
+         gap: 40px;
+
+         .nav-box {
+            h3 {
+               font-size: 17px;
+            }
+
+            a {
+               font-size: 13px;
+            }
+
+            p {
+               font-size: 13px;
+               margin-bottom: 20px;
+            }
+
+            .nav-box-icons {
+               img {
+                  width: 25px;
+               }
+            }
+         }
+      }
+   }
+
 }
