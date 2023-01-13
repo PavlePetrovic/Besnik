@@ -709,6 +709,64 @@ header .header-content img {
   color: #7B8087;
 }
 
+.box-section {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  padding-bottom: 100px;
+}
+
+.box-section .box-wrapper-div {
+  max-width: 1440px;
+  padding-inline: 11%;
+}
+
+.box-section .box {
+  position: relative;
+  background-color: #063183;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 110px 80px;
+}
+
+.box-section .box h2 {
+  font-family: 'Poppins-600';
+  font-size: 35px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.box-section .box p {
+  font-family: 'Poppins-400';
+  font-style: normal;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 28px;
+}
+
+.box-section .box button {
+  font-family: 'Poppins-500';
+  font-size: 13px;
+  padding: 15px 22px;
+  border-radius: 12px;
+  color: #002366;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.box-section .box img {
+  max-width: 230px;
+  position: absolute;
+  right: 215px;
+  bottom: 0;
+}
+
 @media only screen and (max-width: 1185px) {
   header .header-content {
     -webkit-box-orient: horizontal;

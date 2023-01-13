@@ -540,6 +540,59 @@ header {
    }
 }
 
+.box-section {
+   display: flex !important;
+   flex-direction: column;
+   background-color: $light-background;
+   padding-bottom: 100px;
+
+   .box-wrapper-div {
+      max-width: 1440px;
+      padding-inline: 11%;
+   }
+
+   .box {
+      position: relative;
+      background-color: #063183;
+      margin-top: 20px;
+      border-radius: 20px;
+      padding: 110px 80px;
+
+      h2 {
+         font-family: 'Poppins-600';
+         font-size: 35px;
+         color: white;
+         margin-bottom: 15px;
+      }
+
+      p { 
+         font-family: 'Poppins-400';
+         font-style: normal;
+         font-size: 16px;
+         color: white;
+         margin-bottom: 28px;
+      }
+
+      button {
+         font-family: 'Poppins-500';
+         font-size: 13px;
+         padding: 15px 22px;
+         border-radius: 12px;
+         color: #002366;
+         background-color: $light-background;
+         border: none;
+         cursor: pointer;
+      }
+
+      img {
+         max-width: 230px;
+         position: absolute;
+         right: 215px;
+         bottom: 0;
+      }
+   }
+}
+
 @import './mediaq/media-1185';
 @import './mediaq/media-970';
 @import './mediaq/media-585';
