@@ -68,4 +68,24 @@
          }
       }
    }
+
+   .properties-section {
+      .properties-cards-div {
+         .properties-card {
+            .properties-card-icons {
+               .properties-icon {
+                  gap: 0px;
+
+                  img {
+                     width: 18px;
+                  }
+                  p {
+                     font-size: 13px;
+                     padding-inline: 4px;
+                  }
+               }
+            }
+         }
+      }
+   }
 }

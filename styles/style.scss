@@ -297,7 +297,116 @@ header {
       text-align: center;
       color: white;
       margin-top: 48px;
-      margin-bottom: 100px
+      margin-bottom: 110px
+   }
+}
+
+.properties-section {
+   display: flex;
+   flex-direction: column;
+   background-color: #F5FAFE;
+
+   .properties-wrapper-div {
+      max-width: 1440px;
+      padding-inline: 11%;
+   }
+
+   .properties-info {
+      display: flex;
+      margin-top: 90px;
+
+      .properties-title {
+         margin-right: auto;
+
+         h2 {
+            font-family: 'Poppins-600';
+            font-size: 35px;
+            margin-bottom: 12px;
+            color: $subtitle-text;
+         }
+
+         p {
+            font-family: 'Poppins-400';
+            font-size: 16px;
+            color: $p-description-text;
+         }
+      }
+
+      .properties-link {
+         align-self: flex-end;
+         font-family: 'Poppins-600';
+         font-size: 18px;
+         text-decoration: none;
+         color: #0689FF;
+      }
+   }
+
+   .properties-cards-div {
+      display: flex;
+      margin-top: 68px;
+      padding-bottom: 100px;
+      justify-content: space-between;
+      gap: 15px;
+      
+      .properties-card {
+         display: flex;
+         flex-direction: column;
+         background-color: $light-background;
+         border-radius: 12px;
+         max-width: 350px;
+         
+         img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+         }
+
+         h3, p, .properties-card-icons {
+            padding-inline: 5.5%;
+         }
+
+         h3 {
+            font-family: 'Poppins-600';
+            font-size: 20px;
+            color: $subtitle-text;
+            margin-top: 20px;
+         }
+
+         p {
+            font-family: 'Poppins-500';
+            font-size: 14px;
+            margin-top: 8px;
+            color: #A3A6AB;
+         }
+
+         .properties-card-icons {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 18px;
+            margin-bottom: 25px;
+
+            .properties-icon {
+               display: flex;
+               align-items: center;
+               gap: 5px;
+
+               img {
+                  width: 21px;
+                  border-radius: 0;
+               }
+
+               p {
+                  font-family: 'Poppins-500';
+                  font-size: 14px;
+                  color: #4D4D52;
+                  white-space: nowrap;
+                  margin-top: 0;
+               }
+            }
+         }
+      }
    }
 }
 

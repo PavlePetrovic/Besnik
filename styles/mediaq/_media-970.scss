@@ -177,5 +177,44 @@
       }
    }
 
+   .properties-section {
+      .properties-info {
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+
+         .properties-title {
+            margin-right: 0;
+            text-align: center;
+         }
+
+         .properties-link {
+            margin-top: 10px;
+            align-self: center;
+         }
+      }
+
+      .properties-cards-div {
+         flex-direction: column;
+         align-items: center;
+         gap: 40px;
+
+         .properties-card {
+            .properties-card-icons {
+               .properties-icon {
+                  gap: 5px;
+
+                  img {
+                     width: 21px;
+                  }
+                  p {
+                     font-size: 14px;
+                  }
+               }
+            }
+         }
+      }
+   }
+
 
 }

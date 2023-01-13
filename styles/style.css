@@ -411,7 +411,143 @@ header .header-content img {
   text-align: center;
   color: white;
   margin-top: 48px;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
+}
+
+.properties-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #F5FAFE;
+}
+
+.properties-section .properties-wrapper-div {
+  max-width: 1440px;
+  padding-inline: 11%;
+}
+
+.properties-section .properties-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 90px;
+}
+
+.properties-section .properties-info .properties-title {
+  margin-right: auto;
+}
+
+.properties-section .properties-info .properties-title h2 {
+  font-family: 'Poppins-600';
+  font-size: 35px;
+  margin-bottom: 12px;
+  color: #000339;
+}
+
+.properties-section .properties-info .properties-title p {
+  font-family: 'Poppins-400';
+  font-size: 16px;
+  color: #5A6473;
+}
+
+.properties-section .properties-info .properties-link {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-family: 'Poppins-600';
+  font-size: 18px;
+  text-decoration: none;
+  color: #0689FF;
+}
+
+.properties-section .properties-cards-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 68px;
+  padding-bottom: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+}
+
+.properties-section .properties-cards-div .properties-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 12px;
+  max-width: 350px;
+}
+
+.properties-section .properties-cards-div .properties-card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.properties-section .properties-cards-div .properties-card h3, .properties-section .properties-cards-div .properties-card p, .properties-section .properties-cards-div .properties-card .properties-card-icons {
+  padding-inline: 5.5%;
+}
+
+.properties-section .properties-cards-div .properties-card h3 {
+  font-family: 'Poppins-600';
+  font-size: 20px;
+  color: #000339;
+  margin-top: 20px;
+}
+
+.properties-section .properties-cards-div .properties-card p {
+  font-family: 'Poppins-500';
+  font-size: 14px;
+  margin-top: 8px;
+  color: #A3A6AB;
+}
+
+.properties-section .properties-cards-div .properties-card .properties-card-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 18px;
+  margin-bottom: 25px;
+}
+
+.properties-section .properties-cards-div .properties-card .properties-card-icons .properties-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.properties-section .properties-cards-div .properties-card .properties-card-icons .properties-icon img {
+  width: 21px;
+  border-radius: 0;
+}
+
+.properties-section .properties-cards-div .properties-card .properties-card-icons .properties-icon p {
+  font-family: 'Poppins-500';
+  font-size: 14px;
+  color: #4D4D52;
+  white-space: nowrap;
+  margin-top: 0;
 }
 
 @media only screen and (max-width: 1185px) {
@@ -491,6 +627,16 @@ header .header-content img {
         -ms-flex-positive: initial;
             flex-grow: initial;
     height: auto;
+  }
+  .properties-section .properties-cards-div .properties-card .properties-card-icons .properties-icon {
+    gap: 0px;
+  }
+  .properties-section .properties-cards-div .properties-card .properties-card-icons .properties-icon img {
+    width: 18px;
+  }
+  .properties-section .properties-cards-div .properties-card .properties-card-icons .properties-icon p {
+    font-size: 13px;
+    padding-inline: 4px;
   }
 }
 
@@ -671,6 +817,47 @@ header .header-content img {
   .how-section button {
     margin-top: 55px;
   }
+  .properties-section .properties-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .properties-section .properties-info .properties-title {
+    margin-right: 0;
+    text-align: center;
+  }
+  .properties-section .properties-info .properties-link {
+    margin-top: 10px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .properties-section .properties-cards-div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 40px;
+  }
+  .properties-section .properties-cards-div .properties-card .properties-card-icons .properties-icon {
+    gap: 5px;
+  }
+  .properties-section .properties-cards-div .properties-card .properties-card-icons .properties-icon img {
+    width: 21px;
+  }
+  .properties-section .properties-cards-div .properties-card .properties-card-icons .properties-icon p {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 585px) {
@@ -707,6 +894,15 @@ header .header-content img {
     max-width: 100px;
     height: 120px;
     left: -20px;
+  }
+  .properties-section .properties-cards-div .properties-card .properties-card-icons .properties-icon {
+    gap: 5px;
+  }
+  .properties-section .properties-cards-div .properties-card .properties-card-icons .properties-icon img {
+    width: 18px;
+  }
+  .properties-section .properties-cards-div .properties-card .properties-card-icons .properties-icon p {
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=style.css.map */
