@@ -601,6 +601,60 @@ header {
    }
 }
 
+footer {
+   display: flex;
+   flex-direction: column;
+   background-color: $light-background;
+   padding-bottom: 50px;
+   align-items: center;
+
+   .footer-wrapper-div {
+      max-width: 1440px;
+      width: 100%;
+      padding-inline: 11%;
+   }
+
+   .footer-nav {
+      display: flex;
+      justify-content: space-between;
+
+      .nav-box {
+         display: flex;
+         flex-direction: column;
+
+         h3 {
+            font-family: 'Lato-700';
+            font-size: 20px;
+            color: #1C1C1D;
+            margin-bottom: 42px;
+         }
+
+         a {
+            font-family: 'Poppins-400';
+            font-size: 16px;
+            color: #7A7A7E;
+            margin-bottom: 18px;
+            text-decoration: none;
+         }
+
+         p {
+            max-width: 240px;
+            font-family: 'Poppins-400';
+            font-size: 16px;
+            color: #7A7A7E;
+            line-height: 28px;
+            margin-bottom: 40px;
+         }
+
+         .nav-box-icons {
+            display: flex;
+            gap: 16px;
+            cursor: pointer;
+         }
+      }
+   }
+}
+
 @import './mediaq/media-1185';
 @import './mediaq/media-970';
 @import './mediaq/media-585';
