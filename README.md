@@ -1,4 +1,4 @@
-# Besnik - StuntCoders Test :houses:
+# Besnik - :houses:
 
 Take a look: [Besnik live site](https://besnik-project.netlify.app/)
 
